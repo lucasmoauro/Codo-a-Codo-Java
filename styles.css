@@ -38,14 +38,6 @@ body {
 	width: 90%;
 }
 
-/* Imagen */
-.div-image {
-	background-image: url(./images/ba1.jpg);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-}
-
 /* texto */
 .text-underline {
 	text-decoration: dotted underline #353a40;

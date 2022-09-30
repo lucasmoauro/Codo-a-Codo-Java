@@ -84,11 +84,43 @@
 		<main class="body d-flex flex-column justify-content-between">
 			<!-- Imagen -->
 			<section class="h-10" id="conferencia">
-				<div class="div-image h-100">
+				<div class="h-100">
 					<div
 						class="bg-image h-100 d-flex justify-content-center flex-column align-items-end"
 					>
-						<div class="w-25 me-8">
+						<!-- Carrusel -->
+						<div
+							class="carousel slide position-absolute w-100 h-10"
+							data-bs-ride="carousel"
+						>
+							<div class="carousel-inner">
+								<div class="carousel-item active">
+									<img
+										src="/images/ba1.jpg"
+										class="d-block w-100 h-10"
+										alt="Buenos Aires"
+									/>
+								</div>
+								<div class="carousel-item">
+									<img
+										src="/images/ba2.jpg"
+										class="d-block w-100 h-10"
+										alt="Buenos Aires"
+									/>
+								</div>
+								<div class="carousel-item">
+									<img
+										src="/images/ba3.jpg"
+										class="d-block w-100 h-10"
+										alt="Buenos Aires"
+									/>
+								</div>
+							</div>
+						</div>
+						<!-- Div de fondo oscuro -->
+						<div class="w-100 h-10 position-absolute bg-image"></div>
+
+						<div class="w-25 me-8 position-relative">
 							<h1 class="text-light">Conf Bs As</h1>
 							<p class="text-light">
 								Bs As llega por primera vez a Argentina. Un evento para
@@ -180,7 +212,7 @@
 			<!-- FinTarjetas -->
 			<!-- Seccion Info Bs As - Octubre -->
 			<section class="mt-5" id="lugar">
-				<div class="bg-success d-flex">
+				<div class="d-flex">
 					<div class="w-50">
 						<img
 							src="./images/honolulu.jpg"
