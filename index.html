@@ -69,7 +69,7 @@
 							<li class="nav-item">
 								<a
 									class="nav-link fs-5 text-success"
-									href="#4"
+									href="#tickets"
 									aria-current="page"
 									>Comprar tickets</a
 								>
@@ -134,7 +134,7 @@
 								<a href="#conviertete" class="btn btn-outline-light me-2">
 									Quiero ser orador
 								</a>
-								<button class="btn btn-success">Comprar tickets</button>
+								<a class="btn btn-success" href="#tickets">Comprar tickets</a>
 							</div>
 						</div>
 					</div>
@@ -236,6 +236,127 @@
 				</div>
 			</section>
 			<!-- Fin Seccion Info Bs As - Octubre -->
+			<!-- Seccion Compra de Tickets -->
+			<section
+				class="d-flex align-items-center justify-content-center flex-column pt-5"
+				id="tickets"
+			>
+				<div class="row">
+					<div class="col">
+						<div class="row">
+							<div class="card me-1 border border-primary" style="width: 16rem">
+								<div class="card-body text-center">
+									<h5 class="card-title fw-bold">Estudiante</h5>
+									<p class="card-text">Tienen un descuento</p>
+									<p class="card-text fw-bold">80%</p>
+									<p class="card-text">* presentar documentación</p>
+								</div>
+							</div>
+							<div
+								class="card me-1 border border-secondary"
+								style="width: 16rem"
+							>
+								<div class="card-body text-center">
+									<h5 class="card-title fw-bold">Trainee</h5>
+									<p class="card-text">Tienen un descuento</p>
+									<p class="card-text fw-bold">50%</p>
+									<p class="card-text">* presentar documentación</p>
+								</div>
+							</div>
+							<div class="card border border-warning" style="width: 16rem">
+								<div class="card-body text-center">
+									<h5 class="card-title fw-bold">Junior</h5>
+									<p class="card-text">Tienen un descuento</p>
+									<p class="card-text fw-bold">15%</p>
+									<p class="card-text">* presentar documentación</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col">
+						<p class="text-center">VENTA</p>
+						<h5 class="fw-bold text-center fs-2">VALOR DEL TICKET $200</h5>
+					</div>
+				</div>
+				<div class="row w-51">
+					<div class="col">
+						<form class="w-100">
+							<div class="input-group mb-4">
+								<input
+									type="text"
+									placeholder="Nombre"
+									id="nombre"
+									class="form-control me-3 radius-4 fs-6"
+								/>
+								<input
+									type="text"
+									id="apellido"
+									placeholder="Apellido"
+									class="form-control ms-3 radius-4 fs-6"
+								/>
+							</div>
+							<div class="input-group">
+								<input
+									type="email"
+									id="correo"
+									placeholder="Correo"
+									class="form-control radius-4 fs-6"
+								/>
+							</div>
+							<div class="input-group mt-4 mb-4 d-flex justify-content-between">
+								<div class="d-flex flex-column w-48">
+									<label for="cantidad">Cantidad</label>
+									<input
+										id="cantidad"
+										min="0"
+										type="number"
+										placeholder="Cantidad"
+										class="form-control radius-4 fs-6 mt-1"
+									/>
+								</div>
+								<div class="d-flex flex-column w-48">
+									<label for="categoria">Categoria</label>
+									<select class="form-select mt-1" id="categoria">
+										<option selected value="">Seleccione una opcion</option>
+										<option value="estudiante">Estudiante</option>
+										<option value="trainee">Trainee</option>
+										<option value="junior">Junior</option>
+									</select>
+								</div>
+							</div>
+							<div class="row mb-1 visually-hidden" id="total">
+								<div class="col">
+									<p class="bg-info rounded p-3 fs-5" id="textoTotal">
+										Total a pagar: $
+									</p>
+								</div>
+							</div>
+
+							<div class="mb-4 row">
+								<div class="col">
+									<button
+										class="btn btn-danger text-light fs-4 w-100"
+										id="borrar"
+									>
+										Borrar
+									</button>
+								</div>
+								<div class="col">
+									<button
+										class="btn btn-green text-light fs-4 w-100"
+										id="resumen"
+									>
+										Resumen
+									</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</section>
+			<!-- Fin Seccion Compra de Tickets -->
 			<!-- Seccion contacto -->
 			<section
 				class="w-50 d-flex align-items-center justify-content-center pt-5 flex-column m-auto"
@@ -338,5 +459,6 @@
 			integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
 			crossorigin="anonymous"
 		></script>
+		<script src="./app.js"></script>
 	</body>
 </html>
