@@ -38,6 +38,7 @@ resumen.addEventListener("click", (e) => {
 });
 
 borrar.addEventListener("click", () => {
+    e.preventDefault();
 	totalEsVisible = false;
 	nombre.value = "";
 	apellido.value = "";
